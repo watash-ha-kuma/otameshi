@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽選アプリ</title>
+</head>
+<body>
+    <h1 id="result">ここに結果が表示されます</h1>
+    <button onclick="drawNumber()">抽選する</button>
+
+    <script>
+        function drawNumber() {
+            let number = Math.floor(Math.random() * (248 - 3 + 1)) + 3;
+            document.getElementById("result").innerText = "抽選結果: " + number;
+        }
+    </script>
+</body>
+</html>
